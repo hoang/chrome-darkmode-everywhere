@@ -1,0 +1,10 @@
+{
+    "name": "Chrome Dark Mode Everywhere",
+    "version": "1.0",
+    "description": "Produce dark mode on every chrome web pages!",
+    "permissions": ["activeTab", "declarativeContent"],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
