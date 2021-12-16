@@ -8,7 +8,8 @@ applyButton.onclick = function (element) {
             func: () => {
                 document.body.style.background = "#fff";
                 document.documentElement.style.filter = "invert(80%)";
-                var style = document.createElement("style"); 
+                var style = document.createElement("style");
+                style.setAttribute("id", "hoangtv-darkmode-style");
                 style.innerHTML = "img {filter: invert(1);}"; 
                 document.body.append(style);
             }
@@ -22,6 +23,7 @@ removeButton.onclick = function (element) {
             target: { tabId: tabs[0].id, allFrames: true },
             func: () => {
                 document.documentElement.style.filter = "initial";
+                document.getElementById("hoangtv-darkmode-style").remove();
             }
         })
     })
